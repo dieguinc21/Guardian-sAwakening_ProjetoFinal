@@ -1,86 +1,82 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movimentação")]
+    [Header("Movimento")]
     public float speed = 5f;
-    public float jumpForce = 5f;
+    public float jumpForce = 7f;
 
-    [Header("Limites de Tela")]
-    public Camera cam; // câmera usada para limitar o movimento
-    public float margem = 0.5f; // distância mínima das bordas
+    [Header("Pulo Duplo")]
+    public int maxPulos = 2;
+    private int pulosRestantes;
 
-    [Header("Limite de Queda")]
-    public float limiteQuedaY = -10f; // se o player cair abaixo disso, ele será resetado
-    public Vector3 pontoInicial = Vector3.zero; // posição de respawn
-
+    [Header("Referências")]
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private bool isGrounded;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        pulosRestantes = maxPulos;
 
-        if (cam == null)
-            cam = Camera.main;
-
-        // Define o ponto inicial (caso o player caia)
-        pontoInicial = transform.position;
+        // Faz o player piscar ao iniciar a cena (3 piscadas rápidas)
+        StartCoroutine(EfeitoPiscarInicio());
     }
 
     void Update()
     {
-        // Movimento horizontal
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // Pular
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        // Pulo duplo
+        if (Input.GetButtonDown("Jump") && pulosRestantes > 0)
         {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            pulosRestantes--;
         }
-
-        // Travar player dentro da área visível da câmera
-        LimitarPosicaoNaTela();
-
-        // Evitar queda infinita
-        VerificarQueda();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Detecta o chão
         if (collision.gameObject.CompareTag("Ground"))
+        {
             isGrounded = true;
+            pulosRestantes = maxPulos;
+        }
+
+        // Detecta o tilemap de morte
+        if (collision.gameObject.CompareTag("Morte"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
-            isGrounded = false;
-    }
-
-    private void LimitarPosicaoNaTela()
-    {
-        if (cam == null) return;
-
-        // Pega os limites da tela visível da câmera
-        Vector3 limiteInferiorEsquerdo = cam.ViewportToWorldPoint(new Vector3(0, 0, cam.nearClipPlane));
-        Vector3 limiteSuperiorDireito = cam.ViewportToWorldPoint(new Vector3(1, 1, cam.nearClipPlane));
-
-        // Clampa (limita) a posição do player para ficar dentro da tela
-        Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, limiteInferiorEsquerdo.x + margem, limiteSuperiorDireito.x - margem);
-        pos.y = Mathf.Clamp(pos.y, limiteInferiorEsquerdo.y + margem, limiteSuperiorDireito.y - margem);
-        transform.position = pos;
-    }
-
-    private void VerificarQueda()
-    {
-        if (transform.position.y < limiteQuedaY)
         {
-            // Reseta o player no ponto inicial e zera a velocidade
-            transform.position = pontoInicial;
-            rb.linearVelocity = Vector2.zero;
+            isGrounded = false;
+        }
+    }
+
+    // Coroutine para piscadas rápidas e leves ao iniciar
+    private IEnumerator EfeitoPiscarInicio()
+    {
+        float duracao = 0.15f; // duração de cada piscada (rápido)
+        int quantidade = 3;    // número de piscadas
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0.3f); // semi-transparente
+            yield return new WaitForSeconds(duracao);
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);   // normal
+            yield return new WaitForSeconds(duracao);
         }
     }
 }

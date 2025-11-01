@@ -7,14 +7,16 @@ TagManager:
   - player
   - Ground
   - Morte
+  - Enemy
+  - Paredes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Paredes
   - 
   - 
   - 
