@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b13f4fb3aca31634ca387b37c623f527
+guid: 0a856dc18785b0c4090a0457a377c5be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7111396506342550342
-    second: quadro0000_0
+      213: 3221372450990280722
+    second: fundo fogo pronto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: quadro0000_0
+      name: fundo fogo pronto_0
       rect:
         serializedVersion: 2
-        x: 2133
-        y: 405
-        width: 299
-        height: 399
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64b6089d171c0b260800000000000000
-      internalID: 7111396506342550342
+      spriteID: 21051863d2d94bc20800000000000000
+      internalID: 3221372450990280722
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      quadro0000_0: 7111396506342550342
+      fundo fogo pronto_0: 3221372450990280722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

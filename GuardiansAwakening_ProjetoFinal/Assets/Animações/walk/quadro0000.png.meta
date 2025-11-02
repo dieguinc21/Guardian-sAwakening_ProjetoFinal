@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a25b95837119d8446b3526e457660c6d
+guid: 94da9874d7f51c9499fb68382b05a71c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5883947534341912559
-    second: quadro0008_0
+      213: 7111396506342550342
+    second: quadro0000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: quadro0008_0
+      name: quadro0000_0
       rect:
         serializedVersion: 2
         x: 2133
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 118c38a54e4085ea0800000000000000
-      internalID: -5883947534341912559
+      spriteID: 64b6089d171c0b260800000000000000
+      internalID: 7111396506342550342
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      quadro0008_0: -5883947534341912559
+      quadro0000_0: 7111396506342550342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
