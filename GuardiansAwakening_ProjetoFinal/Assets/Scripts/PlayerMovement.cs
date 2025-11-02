@@ -65,15 +65,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Coroutine para piscadas rápidas e leves ao iniciar
     private IEnumerator EfeitoPiscarInicio()
     {
-        float duracao = 0.15f; // duração de cada piscada (rápido)
+        float duracao = 0.10f; // duração de cada piscada (rápido)
         int quantidade = 3;    // número de piscadas
 
         for (int i = 0; i < quantidade; i++)
         {
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0.3f); // semi-transparente
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0f); // semi-transparente
             yield return new WaitForSeconds(duracao);
             spriteRenderer.color = new Color(1f, 1f, 1f, 1f);   // normal
             yield return new WaitForSeconds(duracao);
