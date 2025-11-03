@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c40ea3b6d6d06c44aabc504ae75b765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrolRaycast
-  speed: 2
+  speed: 1
   frontCheck: {fileID: 180923962933163}
   rayDistance: 0.1
   wallsLayer:
