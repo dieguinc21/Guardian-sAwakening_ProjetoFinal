@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - player
   - Ground
   - Morte
   - Enemy
   - Paredes
+  - player
   layers:
   - Default
   - TransparentFX
