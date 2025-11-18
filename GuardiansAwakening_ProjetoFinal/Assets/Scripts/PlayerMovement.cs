@@ -17,8 +17,13 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isGrounded;
 
+    private Animator animator;
+
+
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
+
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         pulosRestantes = maxPulos;
@@ -32,12 +37,30 @@ public class PlayerMovement : MonoBehaviour
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
+      //  rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+      // float moveSpeed = 20;
+      // rb.AddForce(new Vector2(move * speed, 0) * moveSpeed, ForceMode2D.Force);
+
         // Pulo duplo
         if (Input.GetButtonDown("Jump") && pulosRestantes > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             pulosRestantes--;
+        }
+
+        animator.SetBool("movendo", move != 0);
+
+        if (move > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        
+        
+        if (move<0)
+        {
+            spriteRenderer.flipX = true;
         }
     }
 
