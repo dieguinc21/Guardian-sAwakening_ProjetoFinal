@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 3cba0410e9c76f048a361c886ace7aa0
+guid: f8bd30687ffe887499da7fcbc7f71f34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8065592087478937456
-    second: walk0012_0
-  - first:
-      213: -5126888997806513725
-    second: walk0012_1
-  - first:
-      213: 5048815900394937938
-    second: walk0012_2
-  - first:
-      213: -2200598156328504018
-    second: walk0012_3
+      213: 5974232948447158463
+    second: agua fundo 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -81,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk0012_0
+      name: agua fundo 2_0
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 1422
-        width: 22
-        height: 20
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 098dd92dab2411090800000000000000
-      internalID: -8065592087478937456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk0012_1
-      rect:
-        serializedVersion: 2
-        x: 1054
-        y: 1415
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c162e2be91a9d8b0800000000000000
-      internalID: -5126888997806513725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk0012_2
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 1413
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25e5267cf4ff01640800000000000000
-      internalID: 5048815900394937938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk0012_3
-      rect:
-        serializedVersion: 2
-        x: 1119
-        y: 827
-        width: 697
-        height: 1230
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e25f8a6d2a7e571e0800000000000000
-      internalID: -2200598156328504018
+      spriteID: fb0a0a9b63db8e250800000000000000
+      internalID: 5974232948447158463
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk0012_0: -8065592087478937456
-      walk0012_1: -5126888997806513725
-      walk0012_2: 5048815900394937938
-      walk0012_3: -2200598156328504018
+      agua fundo 2_0: 5974232948447158463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
