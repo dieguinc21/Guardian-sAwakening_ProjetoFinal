@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: cde973cb814e4e74fa1fa0c6d4ed39ae
+guid: cc6b52cf275aec54bb2eace25c404ad0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6943785642121611435
-    second: tela de fundo2_0
+      213: -314937753695801032
+    second: jump0000_0
+  - first:
+      213: 904268850169752580
+    second: jump0000_1
+  - first:
+      213: 8612858678639619522
+    second: jump0000_2
+  - first:
+      213: -6740310756040422626
+    second: jump0000_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,9 +81,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tela de fundo2_0
+      name: jump0000_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3508
-        height: 2480
+        x: 1049
+        y: 1422
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba8cd1370484d5060800000000000000
-      internalID: 6943785642121611435
+      spriteID: 8313a9818cd11abf0800000000000000
+      internalID: -314937753695801032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump0000_1
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1415
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ca1db6abb9c8c00800000000000000
+      internalID: 904268850169752580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump0000_2
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1413
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd64f8d555078770800000000000000
+      internalID: 8612858678639619522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump0000_3
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 825
+        width: 697
+        height: 1232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b477e341b9572a0800000000000000
+      internalID: -6740310756040422626
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tela de fundo2_0: 6943785642121611435
+      jump0000_0: -314937753695801032
+      jump0000_1: 904268850169752580
+      jump0000_2: 8612858678639619522
+      jump0000_3: -6740310756040422626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

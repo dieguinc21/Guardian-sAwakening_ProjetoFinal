@@ -9791,7 +9791,7 @@ Transform:
   m_GameObject: {fileID: 715384655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
   m_LocalScale: {x: 0.9259259, y: 0.9259259, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9810,7 +9810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundAutoFollow
   targetCamera: {fileID: 1295518583}
-  zOffset: 0
+  zOffset: 5
   parallaxFactor: 1
 --- !u!1 &794591310
 GameObject:
@@ -11118,8 +11118,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1295518584}
   - {fileID: 2075775404}
-  - {fileID: 1063530329734657909}
   - {fileID: 715384657}
   - {fileID: 1241718737}
   - {fileID: 1897933392}
   - {fileID: 309161403}
+  - {fileID: 1063530329734657909}
