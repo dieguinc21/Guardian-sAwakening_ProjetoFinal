@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 3827d61bc0a80854e94223f0fcfd55b3
+guid: f9ed895aa5149d14784bfbcb44427659
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2217206471843006820
-    second: jump0029_0
+      213: 6727659881853632990
+    second: pulo0010_0
   - first:
-      213: 4628803923810914841
-    second: jump0029_1
+      213: -1905142534816613437
+    second: pulo0010_1
   - first:
-      213: -6836843650143398621
-    second: jump0029_2
+      213: -4863531624899800230
+    second: pulo0010_2
   - first:
-      213: 6961794053020413416
-    second: jump0029_3
+      213: 4876572959264971701
+    second: pulo0010_3
   - first:
-      213: 2679240045486676800
-    second: jump0029_4
+      213: -884645991616740144
+    second: pulo0010_4
   - first:
-      213: 1299048005583925657
-    second: jump0029_5
+      213: 848974035256341885
+    second: pulo0010_5
   - first:
-      213: 7531353859640499775
-    second: jump0029_6
+      213: 3388265540015144977
+    second: pulo0010_6
   - first:
-      213: -7623187588495982237
-    second: jump0029_7
+      213: -7158405956994543605
+    second: pulo0010_7
   - first:
-      213: -4903836667859649116
-    second: jump0029_8
-  - first:
-      213: -1077610997955734482
-    second: jump0029_9
-  - first:
-      213: 3464083314563551548
-    second: jump0029_10
+      213: 1086493771261690214
+    second: pulo0010_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,9 +96,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -130,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump0029_0
+      name: pulo0010_0
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 1475
-        width: 7
-        height: 7
+        x: 1141
+        y: 1478
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46946e3f98915ce10800000000000000
-      internalID: 2217206471843006820
+      spriteID: ed1488394037d5d50800000000000000
+      internalID: 6727659881853632990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_1
+      name: pulo0010_1
       rect:
         serializedVersion: 2
-        x: 1097
-        y: 1480
-        width: 7
-        height: 7
+        x: 1152
+        y: 1481
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,17 +161,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9121fade4a0dc3040800000000000000
-      internalID: 4628803923810914841
+      spriteID: 3cbb4cd55f29f85e0800000000000000
+      internalID: -1905142534816613437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_2
+      name: pulo0010_2
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1159
         y: 1481
         width: 6
         height: 7
@@ -189,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32551506ce6ae11a0800000000000000
-      internalID: -6836843650143398621
+      spriteID: a5318f751c3418cb0800000000000000
+      internalID: -4863531624899800230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_3
+      name: pulo0010_3
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 893
-        width: 605
-        height: 1186
+        x: 1272
+        y: 825
+        width: 601
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,19 +205,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ed65b95ec24d9060800000000000000
-      internalID: 6961794053020413416
+      spriteID: 5bb934ee4411da340800000000000000
+      internalID: 4876572959264971701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_4
+      name: pulo0010_4
       rect:
         serializedVersion: 2
-        x: 1090
-        y: 1468
-        width: 7
+        x: 1144
+        y: 1462
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d406bd582b19b3f0800000000000000
+      internalID: -884645991616740144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulo0010_5
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1471
+        width: 6
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -233,41 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04b1c3b40a29e2520800000000000000
-      internalID: 2679240045486676800
+      spriteID: d75fbf2136928cb00800000000000000
+      internalID: 848974035256341885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_5
+      name: pulo0010_6
       rect:
         serializedVersion: 2
-        x: 1096
-        y: 1470
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99172074745270210800000000000000
-      internalID: 1299048005583925657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0029_6
-      rect:
-        serializedVersion: 2
-        x: 1103
+        x: 1157
         y: 1473
-        width: 7
+        width: 6
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -277,41 +271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3e93a9be6eb48860800000000000000
-      internalID: 7531353859640499775
+      spriteID: 110cc4d8e89850f20800000000000000
+      internalID: 3388265540015144977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_7
+      name: pulo0010_7
       rect:
         serializedVersion: 2
-        x: 1091
-        y: 1460
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 361c783174ff43690800000000000000
-      internalID: -7623187588495982237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0029_8
-      rect:
-        serializedVersion: 2
-        x: 1099
+        x: 1152
         y: 1458
-        width: 11
+        width: 9
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -321,41 +293,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4adb0bf388212fbb0800000000000000
-      internalID: -4903836667859649116
+      spriteID: b00dc4f75bb38ac90800000000000000
+      internalID: -7158405956994543605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0029_9
+      name: pulo0010_8
       rect:
         serializedVersion: 2
-        x: 1107
+        x: 1160
         y: 1461
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e245bccb18e8b01f0800000000000000
-      internalID: -1077610997955734482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0029_10
-      rect:
-        serializedVersion: 2
-        x: 1813
-        y: 942
-        width: 7
+        width: 6
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -365,8 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c311beccb65e21030800000000000000
-      internalID: 3464083314563551548
+      spriteID: 6614ab61450041f00800000000000000
+      internalID: 1086493771261690214
       vertices: []
       indices: 
       edges: []
@@ -385,17 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump0029_0: 2217206471843006820
-      jump0029_1: 4628803923810914841
-      jump0029_10: 3464083314563551548
-      jump0029_2: -6836843650143398621
-      jump0029_3: 6961794053020413416
-      jump0029_4: 2679240045486676800
-      jump0029_5: 1299048005583925657
-      jump0029_6: 7531353859640499775
-      jump0029_7: -7623187588495982237
-      jump0029_8: -4903836667859649116
-      jump0029_9: -1077610997955734482
+      pulo0010_0: 6727659881853632990
+      pulo0010_1: -1905142534816613437
+      pulo0010_2: -4863531624899800230
+      pulo0010_3: 4876572959264971701
+      pulo0010_4: -884645991616740144
+      pulo0010_5: 848974035256341885
+      pulo0010_6: 3388265540015144977
+      pulo0010_7: -7158405956994543605
+      pulo0010_8: 1086493771261690214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

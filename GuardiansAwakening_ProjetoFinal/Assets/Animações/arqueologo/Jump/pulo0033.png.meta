@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 1006459d5b0109445a990bdd9419e0ab
+guid: 6729a45dff599074289d1456f59f7214
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7646789889482990602
-    second: jump0033_0
+      213: -3199437968272096890
+    second: pulo0033_0
   - first:
-      213: 6418084540072201190
-    second: jump0033_1
+      213: -7800808848306774221
+    second: pulo0033_1
   - first:
-      213: -432026973249159078
-    second: jump0033_2
+      213: -7612361604473378694
+    second: pulo0033_2
   - first:
-      213: -1200002844012040693
-    second: jump0033_3
+      213: 271375851287986894
+    second: pulo0033_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,9 +81,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump0033_0
+      name: pulo0033_0
       rect:
         serializedVersion: 2
         x: 1049
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a04aeaad3eade1a60800000000000000
-      internalID: 7646789889482990602
+      spriteID: 6818e348e105993d0800000000000000
+      internalID: -3199437968272096890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0033_1
+      name: pulo0033_1
       rect:
         serializedVersion: 2
         x: 1054
@@ -146,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6eb0e6d72ed911950800000000000000
-      internalID: 6418084540072201190
+      spriteID: 33f53f3dea5fdb390800000000000000
+      internalID: -7800808848306774221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0033_2
+      name: pulo0033_2
       rect:
         serializedVersion: 2
         x: 1062
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a50c81eb1c1210af0800000000000000
-      internalID: -432026973249159078
+      spriteID: a78aa87e3757b5690800000000000000
+      internalID: -7612361604473378694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump0033_3
+      name: pulo0033_3
       rect:
         serializedVersion: 2
         x: 1119
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0e243175cbb85fe0800000000000000
-      internalID: -1200002844012040693
+      spriteID: ec2c3a026ee14c300800000000000000
+      internalID: 271375851287986894
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump0033_0: 7646789889482990602
-      jump0033_1: 6418084540072201190
-      jump0033_2: -432026973249159078
-      jump0033_3: -1200002844012040693
+      pulo0033_0: -3199437968272096890
+      pulo0033_1: -7800808848306774221
+      pulo0033_2: -7612361604473378694
+      pulo0033_3: 271375851287986894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

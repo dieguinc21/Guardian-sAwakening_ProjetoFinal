@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator;
 
-
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -28,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         pulosRestantes = maxPulos;
 
-        // Faz o player piscar ao iniciar a cena (3 piscadas rápidas)
         StartCoroutine(EfeitoPiscarInicio());
     }
 
@@ -36,11 +34,6 @@ public class PlayerMovement : MonoBehaviour
     {
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
-
-      //  rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-
-      // float moveSpeed = 20;
-      // rb.AddForce(new Vector2(move * speed, 0) * moveSpeed, ForceMode2D.Force);
 
         // Pulo duplo
         if (Input.GetButtonDown("Jump") && pulosRestantes > 0)
@@ -50,30 +43,29 @@ public class PlayerMovement : MonoBehaviour
             pulosRestantes--;
         }
 
+        // Animação de movimento
         animator.SetBool("movendo", move != 0);
 
         if (move > 0)
         {
             spriteRenderer.flipX = false;
         }
-        
-        
-        if (move<0)
+        if (move < 0)
         {
             spriteRenderer.flipX = true;
         }
+        
+        animator.SetBool("saltando", !isGrounded);    
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Detecta o chão
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
             pulosRestantes = maxPulos;
         }
 
-        // Detecta o tilemap de morte
         if (collision.gameObject.CompareTag("Morte"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -90,14 +82,14 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator EfeitoPiscarInicio()
     {
-        float duracao = 0.10f; // duração de cada piscada (rápido)
-        int quantidade = 3;    // número de piscadas
+        float duracao = 0.10f;
+        int quantidade = 3;
 
         for (int i = 0; i < quantidade; i++)
         {
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0f); // semi-transparente
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
             yield return new WaitForSeconds(duracao);
-            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);   // normal
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
             yield return new WaitForSeconds(duracao);
         }
     }

@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 1bc550b70fea9274abce5594717932d1
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: e3fc93f666e42cc408b13557e0fde7af
+  - enabled: 1
+    path: Assets/Scenes/Fase4.unity
+    guid: e2d943c61cd8f2241ae101b63461fec5
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b2d87b95042a388458f907d9b8a261b2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

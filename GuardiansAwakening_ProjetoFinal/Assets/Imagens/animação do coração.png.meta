@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 32790ffc75f93cb48b9ca9ad97eaa9d8
+guid: 2746195d957c4a64d82adc34c9b7fa9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -314937753695801032
-    second: jump0000_0
-  - first:
-      213: 904268850169752580
-    second: jump0000_1
-  - first:
-      213: 8612858678639619522
-    second: jump0000_2
-  - first:
-      213: -6740310756040422626
-    second: jump0000_3
+      213: -6507160464772840002
+    second: "anima\xE7\xE3o do cora\xE7\xE3o_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,9 +72,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump0000_0
+      name: "anima\xE7\xE3o do cora\xE7\xE3o_0"
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 1422
-        width: 22
-        height: 20
+        x: 620
+        y: 381
+        width: 347
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8313a9818cd11abf0800000000000000
-      internalID: -314937753695801032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0000_1
-      rect:
-        serializedVersion: 2
-        x: 1054
-        y: 1415
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40ca1db6abb9c8c00800000000000000
-      internalID: 904268850169752580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0000_2
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 1413
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2cd64f8d555078770800000000000000
-      internalID: 8612858678639619522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump0000_3
-      rect:
-        serializedVersion: 2
-        x: 1119
-        y: 825
-        width: 697
-        height: 1232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1b477e341b9572a0800000000000000
-      internalID: -6740310756040422626
+      spriteID: eb5cfb0a80ce1b5a0800000000000000
+      internalID: -6507160464772840002
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump0000_0: -314937753695801032
-      jump0000_1: 904268850169752580
-      jump0000_2: 8612858678639619522
-      jump0000_3: -6740310756040422626
+      "anima\xE7\xE3o do cora\xE7\xE3o_0": -6507160464772840002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
