@@ -33,7 +33,7 @@ public class EnemyRespawn : MonoBehaviour
 
     private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
 
         transform.position = startPosition;
 
