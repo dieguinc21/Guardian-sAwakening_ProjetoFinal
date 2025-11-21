@@ -16,7 +16,6 @@ public class Playerco : MonoBehaviour
         mddController = FindObjectOfType<MoedaHudController>();
         mddController.TextUpdate(moedaQtd);
 
-        // Pega o AudioSource do Player
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -27,7 +26,6 @@ public class Playerco : MonoBehaviour
             moedaQtd++;
             mddController.TextUpdate(moedaQtd);
 
-            // 🔊 Toca o som da moeda
             if (somColeta != null && audioSource != null)
             {
                 audioSource.PlayOneShot(somColeta);

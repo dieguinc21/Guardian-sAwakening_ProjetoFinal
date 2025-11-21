@@ -19,8 +19,7 @@ public class PerseguirPlayer : MonoBehaviour
             if (Vector3.Distance(transform.position, player.position) < raioDeVisao)
             {
                 Vector2 direcao = player.position - transform.position;
-                // transform.position += (Vector3)direcao.normalized * velocidade * Time.deltaTime;
-                  transform.position += new Vector3(direcao.normalized.x,0) * velocidade * Time.deltaTime;
+                transform.position += new Vector3(direcao.normalized.x,0) * velocidade * Time.deltaTime;
             }
         }
     }

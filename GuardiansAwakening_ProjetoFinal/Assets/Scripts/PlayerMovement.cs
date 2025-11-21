@@ -12,19 +12,24 @@ public class PlayerMovement : MonoBehaviour
     public int maxPulos = 2;
     private int pulosRestantes;
 
+    [Header("Ground Check")]
+    public Transform groundCheck;            // Posição do sensor
+    public float groundCheckRadius = 0.2f;   // Raio da detecção
+    public LayerMask groundLayer;            // Camada do chão
+
     [Header("Referências")]
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-    private bool isGrounded;
-
     private Animator animator;
+
+    private bool isGrounded;
 
     void Start()
     {
-        animator = gameObject.GetComponent<Animator>();
-
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
         pulosRestantes = maxPulos;
 
         StartCoroutine(EfeitoPiscarInicio());
@@ -32,10 +37,23 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        
+        // GROUND CHECK PRECISO(game obgect Vasio para detectar o chão)
+        
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // Reseta os pulos ao tocar no chão
+        if (isGrounded)
+            pulosRestantes = maxPulos;
+
+        
+        // MOVIMENTO
+        
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // Pulo duplo
+        // PULO / PULO DUPLO
+ 
         if (Input.GetButtonDown("Jump") && pulosRestantes > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
@@ -43,43 +61,28 @@ public class PlayerMovement : MonoBehaviour
             pulosRestantes--;
         }
 
-        // Animação de movimento
-        animator.SetBool("movendo", move != 0);
-
-        if (move > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        if (move < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
         
-        animator.SetBool("saltando", !isGrounded);    
+        // ANIMAÇÕES
+       
+        animator.SetBool("movendo", move != 0);
+        animator.SetBool("saltando", !isGrounded);
+
+        
+        // FLIP
+        
+        if (move > 0) spriteRenderer.flipX = false;
+        if (move < 0) spriteRenderer.flipX = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            pulosRestantes = maxPulos;
-        }
-
         if (collision.gameObject.CompareTag("Morte"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
-
+    // EFEITO VISUAL AO INICIAR
     private IEnumerator EfeitoPiscarInicio()
     {
         float duracao = 0.10f;
@@ -89,8 +92,17 @@ public class PlayerMovement : MonoBehaviour
         {
             spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
             yield return new WaitForSeconds(duracao);
+
             spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
             yield return new WaitForSeconds(duracao);
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
 }
