@@ -10,6 +10,7 @@ TagManager:
   - Paredes
   - player
   - Collectable
+  - ChekPoint
   layers:
   - Default
   - TransparentFX
