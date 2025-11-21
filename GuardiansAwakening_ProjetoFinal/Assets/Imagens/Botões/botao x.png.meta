@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 57e4cae3cac595840b9669e95d85d7c6
+guid: 5555315c45d538b418cf10a1f606ca9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3794550611322748858
-    second: play_0
-  - first:
-      213: -7523842456613593634
-    second: play_1
+      213: 8462711220155678932
+    second: botao x_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,9 +72,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: play_0
+      name: botao x_0
       rect:
         serializedVersion: 2
-        x: 486
+        x: 802
         y: 245
-        width: 432
-        height: 196
+        width: 646
+        height: 647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abf32263da3f8a430800000000000000
-      internalID: 3794550611322748858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: play_1
-      rect:
-        serializedVersion: 2
-        x: 619
-        y: 240
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edd5b831621f59790800000000000000
-      internalID: -7523842456613593634
+      spriteID: 4d087127407917570800000000000000
+      internalID: 8462711220155678932
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      play_0: 3794550611322748858
-      play_1: -7523842456613593634
+      botao x_0: 8462711220155678932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
