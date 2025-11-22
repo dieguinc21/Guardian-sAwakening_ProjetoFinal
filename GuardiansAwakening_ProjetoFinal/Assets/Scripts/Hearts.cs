@@ -8,19 +8,19 @@ public class Hearts : MonoBehaviour
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
-    
-    
-    
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-         HealtLogic();
+        HealtLogic();
     }
 
     void HealtLogic()
@@ -56,6 +56,20 @@ public class Hearts : MonoBehaviour
 
 
     }
+
+    public void TomarDano(int dano)
+    {
+    vida -= dano;
+
+        if (vida <= 0)
+        {
+            vida = 0;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            FindAnyObjectByType<PlayerDamageFlash>().StartCoroutine(
+            FindAnyObjectByType<PlayerDamageFlash>().Flash());
+
+        }
     
+    }
 
 }

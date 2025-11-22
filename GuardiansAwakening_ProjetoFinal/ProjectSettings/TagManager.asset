@@ -8,9 +8,10 @@ TagManager:
   - Morte
   - Enemy
   - Paredes
-  - player
   - Collectable
   - ChekPoint
+  - Boss
+  - player
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Paredes
-  - 
+  - Boss
   - 
   - 
   - 
