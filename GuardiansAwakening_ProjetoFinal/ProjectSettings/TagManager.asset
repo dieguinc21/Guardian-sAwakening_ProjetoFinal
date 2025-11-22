@@ -9,9 +9,11 @@ TagManager:
   - Enemy
   - Paredes
   - Collectable
-  - ChekPoint
   - Boss
   - player
+  - Bullet
+  - Collect
+  - Diamante
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - UI
   - Paredes
   - Boss
-  - 
+  - Hit
   - 
   - 
   - 

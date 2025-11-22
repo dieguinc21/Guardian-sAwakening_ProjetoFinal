@@ -14,4 +14,21 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Voltar()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    public void SomOn()
+    {
+        AudioListener.volume = 1f;
+        Debug.Log("Sons ligados");
+    }
+
+    public void SomOff()
+    {
+        AudioListener.volume = 0f;
+        Debug.Log("Sons desligados");
+    }
 }

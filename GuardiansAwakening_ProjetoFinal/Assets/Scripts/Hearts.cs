@@ -57,19 +57,4 @@ public class Hearts : MonoBehaviour
 
     }
 
-    public void TomarDano(int dano)
-    {
-    vida -= dano;
-
-        if (vida <= 0)
-        {
-            vida = 0;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-            FindAnyObjectByType<PlayerDamageFlash>().StartCoroutine(
-            FindAnyObjectByType<PlayerDamageFlash>().Flash());
-
-        }
-    
-    }
-
 }
