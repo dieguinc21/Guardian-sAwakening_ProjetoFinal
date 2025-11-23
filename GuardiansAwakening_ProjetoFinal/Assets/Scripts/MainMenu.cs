@@ -31,4 +31,13 @@ public class MainMenu : MonoBehaviour
         AudioListener.volume = 0f;
         Debug.Log("Sons desligados");
     }
+
+    public class SceneLoaderManager : MonoBehaviour
+    {
+        // Método público para carregar uma cena por nome (string)
+        public void LoadSceneByName(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    }
 }

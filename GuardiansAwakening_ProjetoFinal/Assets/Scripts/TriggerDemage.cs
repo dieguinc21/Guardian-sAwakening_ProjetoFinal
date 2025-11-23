@@ -3,11 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class TriggerDemage : MonoBehaviour
 {
-    public Hearts heart;
+    private Hearts heart;
+
+    [System.Obsolete]
+    void Start()
+    {
+        heart = FindObjectOfType<Hearts>();
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "player")
+        if (collision.gameObject.CompareTag("player"))
         {
             heart.vida--;
 
