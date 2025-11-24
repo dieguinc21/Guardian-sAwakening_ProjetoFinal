@@ -24,10 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded;
 
-    // Posição inicial para respawn
     private Vector3 posInicial;
 
-    // ------------------ Checkpoint ------------------
     private Vector3 checkpointPos;
     private bool checkpointAtivo = false;
 
@@ -47,18 +45,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // GROUND CHECK
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Reseta os pulos ao tocar no chão
+        
         if (isGrounded)
             pulosRestantes = maxPulos;
 
-        // MOVIMENTO
+       
         float move = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // PULO / PULO DUPLO
+        
         if (Input.GetButtonDown("Jump") && pulosRestantes > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
@@ -66,16 +64,16 @@ public class PlayerMovement : MonoBehaviour
             pulosRestantes--;
         }
 
-        // ANIMAÇÕES
+       
         animator.SetBool("movendo", move != 0);
         animator.SetBool("saltando", !isGrounded);
 
-        // FLIP
+      
         if (move > 0) spriteRenderer.flipX = false;
         if (move < 0) spriteRenderer.flipX = true;
     }
 
-    // ------------------ DETECÇÃO DE MORTE ------------------
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Morte"))
@@ -92,14 +90,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // ------------------ CHECKPOINT FUNCTIONS ------------------
+    
     public void SetCheckpoint(Vector3 pos, SpriteRenderer checkpointSprite = null)
     {
         checkpointPos = pos;
         checkpointAtivo = true;
-        //Debug.Log("Checkpoint salvo: " + checkpointPos);
-
-        // Se foi passado o sprite do checkpoint, faz a piscada
+        
         if (checkpointSprite != null)
         {
             StartCoroutine(PiscarCheckpoint(checkpointSprite));
@@ -114,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
 
         for (int i = 0; i < vezes; i++)
         {
-            checkpointSprite.color = new Color(10f, 10f, 10f, 0f); // mais claro
+            checkpointSprite.color = new Color(10f, 10f, 10f, 0f);
             yield return new WaitForSeconds(duracao);
             checkpointSprite.color = originalColor;
             yield return new WaitForSeconds(duracao);
@@ -129,18 +125,18 @@ public class PlayerMovement : MonoBehaviour
             hearts.vida -= 1;
             if (hearts.vida < 0) hearts.vida = 0;
 
-            // Se vida zerou → GameOver
+            
             if (hearts.vida == 0)
             {
                 checkpointPos = posInicial;
                 checkpointAtivo = false;
-                //Debug.Log("Game Over! Player sem vidas.");
+
                 SceneManager.LoadScene("GameOver");
                 return;
             }
         }
 
-        // Respawn normal no último checkpoint ou posição inicial
+        
         rb.linearVelocity = Vector2.zero;
 
         Vector3 spawnPos = checkpointAtivo ? checkpointPos : posInicial;
@@ -156,7 +152,6 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(EfeitoPiscarInicio());
     }
 
-    // ------------------ EFEITO VISUAL AO MORRER / SPAWN ------------------
     private IEnumerator EfeitoPiscarInicio()
     {
         float duracao = 0.10f;

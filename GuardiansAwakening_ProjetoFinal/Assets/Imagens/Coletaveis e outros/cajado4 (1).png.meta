@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a5ff6b0f70fb412469a5a4e67bf9719b
+guid: de790193816f7284aaa048b5256fec0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6224756827475087167
-    second: areia3_0
-  - first:
-      213: 8638411576162645461
-    second: areia3_1
+      213: -8300384177763061987
+    second: cajado4 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 152
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: areia3_0
+      name: cajado4 (1)_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 778
-        width: 87
-        height: 84
+        x: 1393
+        y: 305
+        width: 1158
+        height: 1698
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c0f82545a83d99a0800000000000000
-      internalID: -6224756827475087167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: areia3_1
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 682
-        width: 87
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d5fbcc6f8dc1e770800000000000000
-      internalID: 8638411576162645461
+      spriteID: d1fe821519c1fcc80800000000000000
+      internalID: -8300384177763061987
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      areia3_0: -6224756827475087167
-      areia3_1: 8638411576162645461
+      cajado4 (1)_0: -8300384177763061987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
