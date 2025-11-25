@@ -41,7 +41,7 @@ public class FallingPlatform : MonoBehaviour
         yield return new WaitForSeconds(tempoParaVoltar);
 
         // Reset da plataforma
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0;
         rb.bodyType = RigidbodyType2D.Kinematic;
         transform.position = posicaoInicial;
