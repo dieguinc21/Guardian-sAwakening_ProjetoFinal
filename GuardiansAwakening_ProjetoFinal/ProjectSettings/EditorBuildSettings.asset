@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase4.unity
     guid: e2d943c61cd8f2241ae101b63461fec5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FaseFinal.unity
     guid: a79b81d57bb303d46a98552135497d94
   - enabled: 1
