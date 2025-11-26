@@ -19,10 +19,10 @@ public class BossController : MonoBehaviour
 
     [Header("Vida do Boss")]
     public int vida = 6;
-    public Image[] vidaHUD; // 6 barrinhas na UI
+    public Image[] vidaHUD;
 
     [Header("Movimento")]
-    public BossPatrolRaycast patrol; // script de patrulha que você já tem
+    public BossPatrolRaycast patrol;
 
     private bool playerDetectado = false;
 
@@ -50,7 +50,7 @@ public class BossController : MonoBehaviour
 
     void Atacar()
     {
-        patrol.enabled = false; // para patrulha
+        patrol.enabled = false;
         animator.SetBool("atacando", true);
 
         fireTimer += Time.deltaTime;

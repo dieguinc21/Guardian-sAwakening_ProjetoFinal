@@ -29,7 +29,8 @@ public class PlayerAT : MonoBehaviour
         if (heartsScript != null)
             heartsScript.vida = vida;
     }
-
+    
+    
     void Update()
     {
         Movimentar();
@@ -37,25 +38,21 @@ public class PlayerAT : MonoBehaviour
         Atirar();
     }
 
-    // ===============================================================
-    // MOVIMENTO
-    // ===============================================================
+
     void Movimentar()
     {
         float movimento = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(movimento * speed, rb.linearVelocity.y);
 
-        // animação
+    
         anim.SetFloat("speed", Mathf.Abs(movimento));
 
-        // flip
+        
         if (movimento > 0) sr.flipX = false;
         if (movimento < 0) sr.flipX = true;
     }
 
-    // ===============================================================
-    // PULO
-    // ===============================================================
+
     void Pular()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -67,19 +64,16 @@ public class PlayerAT : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.CompareTag("Chao"))
+        if (col.collider.CompareTag("Ground"))
             isGrounded = true;
     }
 
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.collider.CompareTag("Chao"))
+        if (col.collider.CompareTag("Ground"))
             isGrounded = false;
     }
 
-    // ===============================================================
-    // TIRO — TECLA T
-    // ===============================================================
     void Atirar()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -88,7 +82,6 @@ public class PlayerAT : MonoBehaviour
 
             GameObject b = Instantiate(playerBulletPrefab, firePoint.position, firePoint.rotation);
 
-            // se o sprite estiver virado, o tiro vira também
             if (sr.flipX)
             {
                 Vector3 scale = b.transform.localScale;
@@ -98,9 +91,6 @@ public class PlayerAT : MonoBehaviour
         }
     }
 
-    // ===============================================================
-    // DANO NO PLAYER
-    // ===============================================================
     public void TomarDano(int dano)
     {
         vida -= dano;
@@ -121,9 +111,6 @@ public class PlayerAT : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 
-    // ===============================================================
-    // DANO POR PROJETIL DO BOSS
-    // ===============================================================
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("InimigoTiro"))

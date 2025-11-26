@@ -15,6 +15,7 @@ TagManager:
   - Collect
   - Diamante
   - Chao
+  - PlayerTiro
   layers:
   - Default
   - TransparentFX

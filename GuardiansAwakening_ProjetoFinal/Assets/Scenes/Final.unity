@@ -160,6 +160,24 @@ RectTransform:
   m_AnchoredPosition: {x: -97.94226, y: -46.934204}
   m_SizeDelta: {x: 163.763, y: 70.8632}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &76097622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2865967089802608140, guid: 913abf2cc6e137d4193fa18f2cd56441, type: 3}
+  m_PrefabInstance: {fileID: 6452971290191382808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &76097629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76097622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aefb5bff1a66624d9caa63025d73359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBullet
+  speed: 10
 --- !u!1001 &245014757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -906,7 +924,7 @@ MonoBehaviour:
   detectionRange: 6
   bossBulletPrefab: {fileID: 4367650474798627795, guid: aa3ede5c09cfe2c4eb1b1ef93e4b1af4, type: 3}
   firePoint: {fileID: 1002875611}
-  fireRate: 1.2
+  fireRate: 1.5
   vida: 6
   vidaHUD:
   - {fileID: 1389708702}
@@ -1324,9 +1342,9 @@ GameObject:
   - component: {fileID: 1324314574}
   - component: {fileID: 1324314573}
   - component: {fileID: 1324314575}
-  m_Layer: 11
+  m_Layer: 3
   m_Name: Tilemap
-  m_TagString: Chao
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4048,7 +4066,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.002984, y: 0.9259259, z: 1}
+  m_LocalScale: {x: 0.9259259, y: 0.9259259, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4166,11 +4184,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2865967089802608140, guid: 913abf2cc6e137d4193fa18f2cd56441, type: 3}
+      propertyPath: m_TagString
+      value: PlayerTiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454783362959121640, guid: 913abf2cc6e137d4193fa18f2cd56441, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2865967089802608140, guid: 913abf2cc6e137d4193fa18f2cd56441, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 76097629}
   m_SourcePrefab: {fileID: 100100000, guid: 913abf2cc6e137d4193fa18f2cd56441, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
