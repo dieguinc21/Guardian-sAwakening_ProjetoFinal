@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65962c996968ae344b8cc112d4d7b800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
-  sceneName: Vitoria
+  sceneName: Final
 --- !u!61 &369878466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1734,7 +1734,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 6394416628552404737, guid: c7fb5d5a54db6114cbd850f89c2e28ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3887,11 +3887,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3239486093584451661, guid: bd1552c6e02cb9d468c712bc38503ead, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.82
+      value: 53.83
       objectReference: {fileID: 0}
     - target: {fileID: 3239486093584451661, guid: bd1552c6e02cb9d468c712bc38503ead, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.02
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 3239486093584451661, guid: bd1552c6e02cb9d468c712bc38503ead, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3927,7 +3927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597701629480258534, guid: bd1552c6e02cb9d468c712bc38503ead, type: 3}
       propertyPath: m_SortingOrder
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6656885082944021329, guid: bd1552c6e02cb9d468c712bc38503ead, type: 3}
       propertyPath: 'coracao.Array.data[0]'
