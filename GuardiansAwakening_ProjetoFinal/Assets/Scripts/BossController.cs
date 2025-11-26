@@ -19,7 +19,8 @@ public class BossController : MonoBehaviour
 
     [Header("Vida do Boss")]
     public int vida = 6;
-    public Image[] vidaHUD;
+    private int vidaOriginal;
+    public GameObject[] vidaHUD;
 
     [Header("Movimento")]
     public BossPatrolRaycast patrol;
@@ -29,6 +30,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+         vidaOriginal = vida;
     }
 
     void Update()
@@ -36,9 +38,20 @@ public class BossController : MonoBehaviour
         DetectarPlayer();
 
         if (playerDetectado)
+        {
             Atacar();
+        }
         else
+        {
             Patrulhar();
+        }
+
+       AtualizarHUD();
+
+        if (vida == 0)
+        {
+            StartCoroutine(Morrer());
+        }
     }
 
     void DetectarPlayer()
@@ -82,20 +95,13 @@ public class BossController : MonoBehaviour
     {
         vida -= dano;
         if (vida < 0) vida = 0;
-
-        AtualizarHUD();
-
-        if (vida == 0)
-        {
-            StartCoroutine(Morrer());
-        }
     }
 
     void AtualizarHUD()
     {
-        for (int i = 0; i < vidaHUD.Length; i++)
+        for (int i =  vidaOriginal-1; i>vida ; i--)
         {
-            vidaHUD[i].enabled = i < vida;
+            vidaHUD[i].SetActive(false);
         }
     }
 

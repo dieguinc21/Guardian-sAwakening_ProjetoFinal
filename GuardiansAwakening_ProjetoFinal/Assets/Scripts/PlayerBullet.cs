@@ -16,8 +16,15 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Boss"))
+        if (collision.CompareTag("Boss"))
         {
+              BossController h = collision.GetComponent<BossController>();
+
+            if (h != null)
+            {
+                h.vida -= 1;
+            }
+
             Destroy(gameObject);
         }
     }
