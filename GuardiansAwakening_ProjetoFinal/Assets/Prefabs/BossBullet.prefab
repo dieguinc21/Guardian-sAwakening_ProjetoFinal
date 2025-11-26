@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6228133948460892069}
   - component: {fileID: 3409735750109087747}
   - component: {fileID: 4885212523696848867}
-  - component: {fileID: 7406656145186035087}
+  - component: {fileID: 5285586523462950438}
   m_Layer: 0
   m_Name: BossBullet
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4367650474798627795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.4218, y: -4.2995, z: 0}
+  m_LocalPosition: {x: 7.48, y: -4.4, z: 0}
   m_LocalScale: {x: 0.1752348, y: 0.1752348, z: 0.1752348}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7406656145186035087
+--- !u!114 &5285586523462950438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4367650474798627795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f881ff8c215e2849b855cef2e079782, type: 3}
+  m_Script: {fileID: 11500000, guid: 13524e3ac46c0eb4d8c7b6505b82238a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 5
+  m_EditorClassIdentifier: Assembly-CSharp::BossBullet
+  speed: 7

@@ -1,20 +1,24 @@
 using UnityEngine;
 
-public class PlayerTiro : MonoBehaviour
+public class PlayerBullet : MonoBehaviour
 {
-    public GameObject prefabTiro;
-    public Transform spawnTiro;
-    public float velocidade = 10f;
+    public float speed = 10f;
+
+    void Start()
+    {
+        Destroy(gameObject, 5f);
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("player"))
         {
-            GameObject t = Instantiate(prefabTiro, spawnTiro.position, spawnTiro.rotation);
-            t.GetComponent<Rigidbody2D>().velocity = transform.right * velocidade;
+            Destroy(gameObject);
         }
     }
 }
-
-
-

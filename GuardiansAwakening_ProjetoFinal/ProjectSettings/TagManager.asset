@@ -14,6 +14,7 @@ TagManager:
   - Bullet
   - Collect
   - Diamante
+  - Chao
   layers:
   - Default
   - TransparentFX
@@ -25,8 +26,8 @@ TagManager:
   - Boss
   - Hit
   - Player
-  - 
-  - 
+  - PlayerBullet
+  - Chao
   - 
   - 
   - 
