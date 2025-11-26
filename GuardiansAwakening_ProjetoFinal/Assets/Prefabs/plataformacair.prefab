@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5214856be75d184ca68744be7eef928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  tempoParaCair: 1
+  tempoParaCair: 0.5
   tempoParaVoltar: 3
 --- !u!1 &6106586410101657269
 GameObject:
