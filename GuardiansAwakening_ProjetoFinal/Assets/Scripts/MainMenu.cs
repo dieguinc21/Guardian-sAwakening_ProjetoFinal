@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Fase1");
+        SceneManager.LoadSceneAsync("Cutcene1");
     }
 
     public void QuitGame()
@@ -32,12 +32,14 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Sons desligados");
     }
 
-    public class SceneLoaderManager : MonoBehaviour
+    public void ProximoC1()
     {
-        // Método público para carregar uma cena por nome (string)
-        public void LoadSceneByName(string sceneName)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+        SceneManager.LoadSceneAsync("Cutcene2");
     }
+    
+    public void ProximoC2()
+    {
+        SceneManager.LoadSceneAsync("Fase1");
+    }
+    
 }

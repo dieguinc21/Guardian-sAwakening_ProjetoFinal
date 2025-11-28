@@ -311,8 +311,8 @@ MonoBehaviour:
   porcaoTerraQtd: 0
   diamanteQtd: 0
   somMoeda: {fileID: 8300000, guid: 19b13b14c22410a4fac4f2c375ebe181, type: 3}
-  somPorcao: {fileID: 8300000, guid: 4657ae4057324094396a60e2d4aea5e6, type: 3}
-  somDiamante: {fileID: 8300000, guid: 4657ae4057324094396a60e2d4aea5e6, type: 3}
+  somPorcao: {fileID: 8300000, guid: 35cf7766e9e2aa542811e896fde57989, type: 3}
+  somDiamante: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
 --- !u!82 &8068435642191264865
 AudioSource:
   m_ObjectHideFlags: 0
