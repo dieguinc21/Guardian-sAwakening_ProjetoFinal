@@ -113,7 +113,7 @@ public class PlayerAT : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("InimigoTiro"))
+        if (col.CompareTag("Boss"))
         {
             TomarDano(1);
             Destroy(col.gameObject);

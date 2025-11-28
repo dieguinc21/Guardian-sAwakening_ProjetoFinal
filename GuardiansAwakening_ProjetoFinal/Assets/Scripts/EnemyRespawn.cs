@@ -20,10 +20,20 @@ public class EnemyRespawn : MonoBehaviour
 
     public void KillEnemy(Collider2D player)
     {
-        // Player quica
+        // --- ADIÇÃO DA LÓGICA DE STOMP (IMPEDIR MORTE LATERAL) ---
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-        if (rb != null)
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 8f);
+
+        // Player não está descendo → não mata inimigo
+        if (rb.linearVelocity.y >= 0)
+            return;
+
+        // Player não está acima da cabeça → não mata inimigo
+        if (player.transform.position.y <= transform.position.y)
+            return;
+        // -----------------------------------------------------------
+
+        // Player quica
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 8f);
 
         // Desativa gráficos e colisores
         foreach (var c in colliders)
@@ -44,7 +54,6 @@ public class EnemyRespawn : MonoBehaviour
 
             Destroy(temp, somMorte.length + 0.1f);  
         }
-
 
         // Inicia o respawn
         StartCoroutine(Respawn());

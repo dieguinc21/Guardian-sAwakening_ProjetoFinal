@@ -5,9 +5,14 @@ using System.Collections.Generic;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void BotãoJogar()
     {
         SceneManager.LoadSceneAsync("Cutcene1");
+    }
+    
+    public void PlayGame()
+    {
+        SceneManager.LoadSceneAsync("Fase1");
     }
 
     public void QuitGame()
@@ -35,11 +40,6 @@ public class MainMenu : MonoBehaviour
     public void ProximoC1()
     {
         SceneManager.LoadSceneAsync("Cutcene2");
-    }
-    
-    public void ProximoC2()
-    {
-        SceneManager.LoadSceneAsync("Fase1");
     }
     
 }

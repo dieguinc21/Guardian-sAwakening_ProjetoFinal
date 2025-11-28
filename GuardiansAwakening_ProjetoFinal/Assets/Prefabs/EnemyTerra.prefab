@@ -126,7 +126,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.036329053, y: 0.15053985}
+  m_Offset: {x: 0.094270244, y: 0.12229991}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -136,7 +136,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5144301, y: 0.023073435}
+  m_Size: {x: 0.7048639, y: 0.079553306}
   m_EdgeRadius: 0
 --- !u!114 &2582665641303569629
 MonoBehaviour:
@@ -329,7 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb32fbf682072f45ae30364bb3310f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDemage
-  heart: {fileID: 0}
 --- !u!70 &8019075572472977628
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

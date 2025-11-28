@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfd5e201e9ed904c81212e448547232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatEffect
-  amplitude: 0.05
-  velocidade: 2
+  amplitude: 0.3
+  velocidade: 0.3
   brilhoVelocidade: 2
   brilhoIntensidade: 0.5

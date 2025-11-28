@@ -413,7 +413,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 36461e7d2958c654c99db64b7027979a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 493dd22b0ce3d9042b65e6adefef4ba6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -974,7 +974,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 154955844}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: "Bot\xE3oJogar"
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
