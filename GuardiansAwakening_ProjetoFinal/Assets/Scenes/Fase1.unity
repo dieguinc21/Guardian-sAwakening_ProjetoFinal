@@ -4708,7 +4708,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 1295518583}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -4717,7 +4717,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 34
+  m_SortingOrder: 54
   m_TargetDisplay: 0
 --- !u!224 &1069358496
 RectTransform:
@@ -6431,9 +6431,9 @@ RectTransform:
   - {fileID: 1933610271}
   m_Father: {fileID: 1069358496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: -33}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1938, y: -1113}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317992662
@@ -26113,8 +26113,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1069358496}
   - {fileID: 1295518584}
+  - {fileID: 1069358496}
   - {fileID: 7339007845012533806}
   - {fileID: 4039550692132895482}
   - {fileID: 715384657}
