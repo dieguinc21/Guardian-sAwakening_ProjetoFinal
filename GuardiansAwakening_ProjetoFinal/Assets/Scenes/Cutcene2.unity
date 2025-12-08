@@ -767,12 +767,12 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -873,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 221, y: 581}
+  m_AnchoredPosition: {x: 391, y: 442}
   m_SizeDelta: {x: 68.5, y: 72.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122968296
@@ -896,10 +896,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Toma esse cajado.\nAo longo do caminho, voc\xEA dever\xE1 coletar ess\xEAncias
-    que ir\xE3o fortalecer o cajado, permitindo que ele dispare magia quando necess\xE1rio.\nUse
-    A e D (ou as setas) para andar,\npressione Espa\xE7o para pular obst\xE1culos,\ne
-    colete os objetos necess\xE1rios enquanto avan\xE7a pela floresta.\n"
+  m_text: "Use A e D (ou as setas) para andar,\npressione Espa\xE7o para pular obst\xE1culos,\ne
+    colete os objetos necess\xE1rios enquanto avan\xE7a pela floresta.\nno duelo
+    final use a tecla \"T\" para Atirar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -964,7 +963,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1532.1735, y: 0, z: -1094.6301, w: -748.98175}
+  m_margin: {x: -1532.1735, y: 0, z: -786.57965, w: -748.98175}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

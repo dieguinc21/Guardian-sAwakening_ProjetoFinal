@@ -177,7 +177,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 5000
   m_Sprite: {fileID: -5004799517839347697, guid: e6c3ce64432b030408022174a98b4213, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -268,7 +268,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 153e4a7f5773d3c488b578eb63669780, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -292,8 +292,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.20647882, y: -0.5709445}
-  m_Size: {x: 1.3906928, y: 10.67086}
+  m_Offset: {x: -0.20647882, y: -0.64424294}
+  m_Size: {x: 1.3906928, y: 10.817462}
   m_Direction: 0
 --- !u!114 &4956273796007389458
 MonoBehaviour:
